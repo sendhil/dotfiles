@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Kitty
+Type=Application
+Terminal=true
+Icon=kitty
+Exec=/usr/local/bin/kitty
+Comment=Kitty
