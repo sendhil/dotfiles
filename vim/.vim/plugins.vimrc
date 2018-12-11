@@ -5,6 +5,8 @@ if !exists('g:deoplete#omni#input_patterns')
 endif " let g:deoplete#disable_auto_complete = 1
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
+let NERDTreeShowHidden=1
+
 " deoplete tab-complete
 "neocomplete#start_manual_complete()
 " <Tab> completion:
