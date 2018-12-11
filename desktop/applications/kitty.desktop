@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Kitty
+OnlyShowIn=GNOME;Unity;
+Exec=kitty
+StartupNotify=true
+Terminal=false
 Type=Application
-Terminal=true
-Icon=kitty
-Exec=/usr/local/bin/kitty
-Comment=Kitty
