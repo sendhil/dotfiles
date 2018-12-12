@@ -210,5 +210,5 @@ exec --no-startup-id ~/scripts/remap_keys.sh
 exec --no-startup-id killall -q notify-osd
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec --no-startup-id compton --config ~/.config/compton/compton.conf
-exec --no-startup-id feh --bg-scale ~/Dropbox/BackgroundImages/duelyst-wallpaper-1.jpg
+exec --no-startup-id feh --bg-scale ~/DesktopBackgrounds/desktop/duelyst-wallpaper-1.jpg
 exec --no-startup-id lxpolkit & #alternative to gnome-polkit
