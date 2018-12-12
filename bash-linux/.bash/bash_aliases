@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+alias ls="ls -G"
+alias clearderiveddata='rm -rf /Users/sendhil/Library/Developer/Xcode/DerivedData/*'
+alias projects='cd /Users/sendhil/Projects'
+alias tmux="TERM=screen-256color tmux"
+alias findfile='find . -name '
+alias src='cd ~/src'
+alias todo="cd ~/Dropbox/todo"
+alias work-notebook="cd ~/Dropbox/lyft-work-notebook"
+alias notes="cd ~/Dropbox/general-notebook"
+
+# Amazon
+alias startdynamodb='cd ~/DevTools/DynamoDB && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb'
+
+# Git
+
+alias diffstrings='git difftool -x ksdiff -- WordPress/Resources/en.lproj/Localizable.strings'
+alias gitwipe='git reset --hard head && git clean -df'
+alias git_cleanup='git branch --merged develop | grep -Ev "(master|release|hotfix|develop)" | xargs git branch -d'
+
+#iOS
+alias openpodspec='vim *.podspec'
+
+alias startnginx='sudo launchctl load /Library/LaunchAgents/homebrew.mxcl.nginx.plist'
+alias stopnginx='sudo launchctl unload /Library/LaunchAgents/homebrew.mxcl.nginx.plist'
+
+# Postgres
+alias enable-postgres-logging='cp "/Users/sendhil/Library/Application Support/Postgres/var-9.5/logging-enabled-postgresql.conf" "/Users/sendhil/Library/Application Support/Postgres/var-9.5/postgresql.conf" && echo "Remember to restart the server"'
+alias disable-postgres-logging='cp "/Users/sendhil/Library/Application Support/Postgres/var-9.5/logging-disabled-postgresql.conf" "/Users/sendhil/Library/Application Support/Postgres/var-9.5/postgresql.conf" && echo "Remember to restart the server"'
+alias tail-postgres-log='tail -f "/Users/sendhil/Library/Application Support/Postgres/var-9.5/postgres-server.log"'
+
+# Git Helpers
+alias gitclearbranches="git branch | egrep -v \"\b(develop|release)\" | xargs git branch -D"
+alias commitsforlastweek='git log --since "1 week ago" --author `git config user.email` --pretty=short '
+
+# Kitty
+alias d="kitty +kitten diff"
+
+export COCOAPODS_DISABLE_DETERMINISTIC_UUIDS=true
+
+export EDITOR=nvim
+
+# IP addresses (From https://github.com/jfrazelle/dotfiles/)
+alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="sudo ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+alias ips="sudo ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# View HTTP traffic (From https://github.com/jfrazelle/dotfiles/)
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
