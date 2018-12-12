@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-source bash_aliases
-source fzf_related
-source utilities
-source google_cloud
-source k8s
+BASEDIR=$(dirname "$0")
+
+source $BASEDIR/bash_aliases
+source $BASEDIR/fzf_related
+source $BASEDIR/utilities
+source $BASEDIR/google_cloud
+source $BASEDIR/k8s
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
