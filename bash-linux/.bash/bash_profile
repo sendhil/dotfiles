@@ -20,4 +20,4 @@ fi
 
 export NVM_DIR="/Users/sendhil/.nvm"
 export GOPATH=$HOME/go
-export PATH=$PATH:~/.cargo/bin:$GOPATH/bin:~/src/google-cloud-sdk/bin
+export PATH=$PATH:~/.cargo/bin:$GOPATH/bin:~/src/google-cloud-sdk/bin:~/.local/bin
