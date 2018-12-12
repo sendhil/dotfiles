@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Lock
+Comment=Lock Screen
+Exec=betterlockscreen -l dim
+Type=Application
