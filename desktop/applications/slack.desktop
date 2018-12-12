@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Slack
-Type=Application
-Terminal=false
-Icon=slack
-Exec=/usr/bin/google-chrome --app=https://lyft.slack.com
-Comment=Slack WebView
-StartupWMClass=www.slack.com_chrome
