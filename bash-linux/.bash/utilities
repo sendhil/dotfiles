@@ -22,9 +22,8 @@ function getsslcert() {
 }
 
 
-BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 function output-functions() {
-  rg function $BASEDIR
+  rg function ~/.bash
 }
 
 # From - https://github.com/jessfraz/dotfiles/blob/master/.functions
