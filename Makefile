@@ -4,6 +4,7 @@ all: stow
 .PHONY: stow
 stow:
 	@mkdir -p ~/DesktopBackgrounds
+	@mkdir -p ~/scripts
 	@stow -t ~ alacritty compton dunst kitty neovim termite vim bash-linux dircolors i3 polybar tmux fonts linux-config
 	@stow -t ~/DesktopBackgrounds desktop-backgrounds
 	@stow -t ~/scripts scripts
