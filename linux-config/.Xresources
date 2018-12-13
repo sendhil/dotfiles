@@ -1,1 +1,7 @@
+#if NUM_SCREENS == 3
 Xft.dpi: 200
+#endif
+
+#if NUM_SCREENS == 1
+Xft.dpi: 175
+#endif
