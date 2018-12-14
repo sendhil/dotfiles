@@ -7,7 +7,7 @@ alias tmux="TERM=screen-256color tmux"
 alias findfile='find . -name '
 alias src='cd ~/src'
 alias todo="cd ~/Dropbox/todo"
-alias work-notebook="cd ~/Dropbox/lyft-work-notebook"
+alias work-notes="cd ~/Dropbox/lyft-work-notebook"
 alias notes="cd ~/Dropbox/general-notebook"
 
 # Git
