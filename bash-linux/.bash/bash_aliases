@@ -9,6 +9,7 @@ alias src='cd ~/src'
 alias todo="cd ~/Dropbox/todo"
 alias work-notes="cd ~/Dropbox/lyft-work-notebook"
 alias notes="cd ~/Dropbox/general-notebook"
+alias nightlight='redshift "-l47.62:-122.21" -t 3700:3700'
 
 # Git
 alias gitwipe='git reset --hard HEAD && git clean -df'
