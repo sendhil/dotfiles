@@ -16,3 +16,9 @@ unstow:
 	@stow -D -t ~/DesktopBackgrounds desktop-backgrounds
 	@stow -D -t ~/scripts scripts
 	@stow -D -t ~/.local/share desktop
+
+.PHONY: gitconfig
+gitconfig:
+	cp ~/.gitconfig ~/.old-gitconfig
+	sed -i 's/^\s*//g' ~/.gitconfig
+	crudini --merge ~/.gitconfig < ./git/aliases.ini
