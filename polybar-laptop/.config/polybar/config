@@ -55,7 +55,7 @@ font-3 = fura code nerd font:pixelsize=16;0
 modules-left = i3
 ; modules-center = xwindow mpd
 modules-center = xwindow
-modules-right = volume memory cpu eth date powermenu
+modules-right = volume memory cpu date powermenu
 
 ; tray-position = right
 ; tray-padding = 2
