@@ -9,6 +9,13 @@ function repeat() {
     done
 }
 
+# Sends a simple reminder
+function messagereminder() {
+  message=$1
+  delay=$2
+  echo "notify-send '${message}'" | at now + $delay minute
+}
+
 function loadssh() {
   if [ -z "$SSH_AUTH_SOCK" ] ; then
     eval `ssh-agent -s`
