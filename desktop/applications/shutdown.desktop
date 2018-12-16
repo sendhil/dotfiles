@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Shutdown
+Comment=Shutdown
+Exec=shutdown
+Type=Application
