@@ -26,3 +26,8 @@ gitconfig:
 	@cp ~/.gitconfig ~/.old-gitconfig
 	@sed -i 's/^\s*//g' ~/.gitconfig
 	@crudini --merge ~/.gitconfig < ./git/aliases.ini
+
+.PHONY prestow
+prestow:
+	@./non-linked-scripts/clear-out-files-before-stow.sh
+
