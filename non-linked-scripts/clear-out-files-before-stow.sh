@@ -1,5 +1,5 @@
 #!/bin/bash -e
 
-rm ~/.bashrc
-rm ~/.bash_profile
-rm ~/.zshrc
+rm -f ~/.bashrc
+rm -f ~/.bash_profile
+rm -f ~/.zshrc
