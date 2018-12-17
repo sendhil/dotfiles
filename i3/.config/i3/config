@@ -90,7 +90,6 @@ bindsym $mod+bar split h
 # split in vertical orientation
 #bindsym $mod+v split v
 bindsym $mod+Shift+Ctrl+v split v
-bindsym $mod+minus split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -105,13 +104,19 @@ bindsym $mod+Shift+i exec redshift "-l47.62:-122.21" -t 3700:3700 # -g 0.5
 bindsym $mod+Shift+u exec pkill redshift
 
 # toggle tiling / floating
-#bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-#bindsym $mod+Ctrl+space focus mode_toggle
+bindsym $mod+Ctrl+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
 
 # focus the child container
 #bindsym $mod+d focus child
