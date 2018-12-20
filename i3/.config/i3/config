@@ -118,6 +118,9 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+# Alt Tab like functionality
+bindsym $mod+Tab workspace back_and_forth
+
 # focus the child container
 #bindsym $mod+d focus child
 
