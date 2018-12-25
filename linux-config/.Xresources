@@ -5,3 +5,62 @@ Xft.dpi: 200
 #if NUM_SCREENS == 1
 Xft.dpi: 175
 #endif
+
+! From - https://github.com/FranciscoDumont/dotfiles/blob/master/.Xresources
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+
+
+#define base00 #121c21
+#define base01 #3E4970
+#define base02 #304b59
+#define base03 #3f6173
+#define base04 #7b8e98
+#define base05 #aaafb2
+#define base06 #bcd9e8
+#define base07 #cfefff
+#define base08 #f0696f
+#define base09 #fa9a6a
+#define base0A #f7cca1
+#define base0B #76a08c
+#define base0C #5f9993
+#define base0D #718c97
+#define base0E #ceb5ce
+#define base0F #877366
+
+rofi.modi: window,run,ssh,drun
+
+rofi.font: Source Code Pro Regular 14
+rofi.hide-scrollbar: true
+rofi.bw: 1 !border width
+rofi.columns: 3
+rofi.padding: 15
+rofi.sidebar-mode: true
+rofi.separator-style: solid
+
+rofi.yoffset: 0
+rofi.location: 0
+rofi.width: 60
+rofi.lines: 15
+rofi.fixed-num-lines: true
+rofi.opacity: 100
+rofi.fullscreen: false
+
+rofi.show-icons: true
+
+!rofi colors
+#define bg base00
+#define fg base05
+#define hlbg base05
+#define hlfg base00
+
+rofi.color-enabled: true
+
+! State:           'bg',   	'fg',    'bgalt',  'hlbg',  'hlfg'
+rofi.color-normal: bg,  	fg,	 	bg,     	hlbg, 	hlfg
+rofi.color-urgent: bg, 		fg, 	bg,     	hlbg, 	hlfg
+rofi.color-active: bg,		fg,		bg,		 	hlbg, 	hlfg
+
+!                  'background',	'border',	'separator'
+rofi.color-window:  bg,				 base09,		 fg
