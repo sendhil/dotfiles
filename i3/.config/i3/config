@@ -221,9 +221,8 @@ exec --no-startup-id ~/scripts/remap_keys.sh
 
 exec --no-startup-id killall -q notify-osd
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
+exec --no-startup-id ~/scripts/setup-background.sh
 exec --no-startup-id compton --config ~/.config/compton/compton.conf
-exec --no-startup-id feh --randomize --bg-scale ~/DesktopBackgrounds/desktop/*
 exec --no-startup-id lxpolkit & #alternative to gnome-polkit
 exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1 # Might need to mess around with this to get it to work properly with laptop/desktop
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Click Method Enabled" 0 1
-exec --no-startup-id ~/scripts/setup-lockscreen-background.sh
