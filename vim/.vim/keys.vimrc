@@ -6,7 +6,7 @@ if has("win32")
     map <C-e> :MRU<CR>
 else
     map <C-e> :Denite file_mru<CR>
-endif
+  endif
 
 " List Navigation
 map <expr> <C-N> (empty(getloclist(1))  ? ":cn" : ":lnext")."\n"
@@ -16,6 +16,8 @@ map <expr> <C-P> (empty(getloclist(0))  ? ":cp" : ":lp")."\n"
 " nmap <Leader>F :LAg 
 nmap <Leader>f :Rg<CR>
 nmap <Leader>F :Rg 
+
+nnoremap <F6> "=strftime("%FT%T%z")<CR>P
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>ew :e %%
