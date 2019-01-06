@@ -17,6 +17,8 @@ map <expr> <C-P> (empty(getloclist(0))  ? ":cp" : ":lp")."\n"
 nmap <Leader>f :Rg<CR>
 nmap <Leader>F :Rg 
 
+nnoremap <F6> "=strftime("%FT%T%z")<CR>P
+
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>ew :e %%
 map <leader>es :sp %%
