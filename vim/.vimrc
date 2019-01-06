@@ -69,6 +69,7 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'saltstack/salt-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
+Plug 'sebdah/vim-delve'
 
 " Typescript
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
