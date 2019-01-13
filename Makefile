@@ -33,6 +33,7 @@ prestow:
 
 .PHONY: install-backup-scripts
 install-backup-scripts:
-	@ln -sf ./scripts/backup_todo.sh /etc/cron.hourly/backup_todo.sh
-	@ln -sf ./scripts/backup_lyft_notes.sh /etc/cron.hourly/backup_lyft_notes.sh
-	@ln -sf ./scripts/backup_notes.sh /etc/cron.hourly/backup_notes.sh
+	@ln -sf ./scripts/backup_todo.sh /etc/cron.daily/backup_todo.sh
+	@ln -sf ./scripts/backup_lyft_notes.sh /etc/cron.daily/backup_lyft_notes.sh
+	@ln -sf ./scripts/backup_notes.sh /etc/cron.daily/backup_notes.sh
+	@ln -sf ./scripts/clear_backups_older_than_one_week.sh /etc/cron.daily/clear_backups_older_than_one_week.sh
