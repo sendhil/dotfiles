@@ -7,6 +7,11 @@ if [ ! -d "$HOME/Dropbox" ]; then
   exit 1
 fi
 
+if [ ! -d "$HOME/Dropbox/general-notebook" ]; then
+  echo "No general notes on this computer"
+  exit 0
+fi
+
 mkdir -p "$HOME/Dropbox/Backups/general-notes"
 
 BACKUPTIME=$(date +%b-%d-%y)
