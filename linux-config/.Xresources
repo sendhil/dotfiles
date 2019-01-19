@@ -1,9 +1,7 @@
-#if NUM_SCREENS == 3
-Xft.dpi: 200
-#endif
-
-#if NUM_SCREENS == 1
-Xft.dpi: 175
+#if WIDTH == 3440
+  Xft.dpi: 125
+#else
+  Xft.dpi: 175
 #endif
 
 ! From - https://github.com/FranciscoDumont/dotfiles/blob/master/.Xresources
