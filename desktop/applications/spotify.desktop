@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Spotify
+Type=Application
+Terminal=false
+Icon=spotify
+Exec=/usr/bin/google-chrome --app=https://open.spotify.com/
+Comment=Spotify WebView
+StartupWMClass=web.spotify.com_chrome
