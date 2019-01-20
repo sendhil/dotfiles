@@ -12,6 +12,10 @@ alias notes="cd ~/Dropbox/general-notebook"
 alias nightlight='redshift "-l47.62:-122.21" -t 3700:3700'
 alias tree="tree -C"
 
+# Calendar
+alias personalcalendar="gcalcli --configFolder ~/.config/gcalcli/personal"
+alias workcalendar="gcalcli --configFolder ~/.config/gcalcli/work"
+
 # Git
 alias gitwipe='git reset --hard HEAD && git clean -df'
 alias git_cleanup='git branch --merged develop | grep -Ev "(master|release|hotfix|develop)" | xargs git branch -d'
