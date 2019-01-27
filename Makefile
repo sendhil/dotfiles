@@ -1,4 +1,5 @@
 POLYBAR_CONFIG := $(shell ./non-linked-scripts/determine-polybar-config.sh)
+HOME_DIRECTORY := $(shell ./non-linked-scripts/get-user-home-directory.sh)
 
 .PHONY: all
 all: stow gitconfig
@@ -33,7 +34,7 @@ prestow:
 
 .PHONY: install-backup-scripts
 install-backup-scripts:
-	@ln -sf ./scripts/backup_todo.sh /etc/cron.daily/backup_todo.sh
-	@ln -sf ./scripts/backup_lyft_notes.sh /etc/cron.daily/backup_lyft_notes.sh
-	@ln -sf ./scripts/backup_notes.sh /etc/cron.daily/backup_notes.sh
-	@ln -sf ./scripts/clear_backups_older_than_one_week.sh /etc/cron.daily/clear_backups_older_than_one_week.sh
+	@ln -sf "$(HOME_DIRECTORY)/scripts/backup_todo.sh" /etc/cron.daily/backup_todo.sh
+	@ln -sf "$(HOME_DIRECTORY)/scripts/backup_lyft_notes.sh" /etc/cron.daily/backup_lyft_notes.sh
+	@ln -sf "$(HOME_DIRECTORY)/scripts/backup_notes.sh" /etc/cron.daily/backup_notes.sh
+	@ln -sf "$(HOME_DIRECTORY)/scripts/clear_backups_older_than_one_week.sh" /etc/cron.daily/clear_backups_older_than_one_week.sh
