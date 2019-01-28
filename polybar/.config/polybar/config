@@ -48,7 +48,7 @@ module-margin-right = 2
 
 ; font-0 = InputSansCondensed:pixelsize=16;0
 font-0 = San Francisco Display Regular:size=11;1
-font-1 = Roboto:size=11:weight=bold
+font-1 = Roboto:size=11;1
 font-2 = -*-gohufont-medium-*-*-*-11-*-*-*-*-*-*-*-*
 font-3 = fura code nerd font:pixelsize=11;0
 
