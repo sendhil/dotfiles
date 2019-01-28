@@ -218,6 +218,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 exec --no-startup-id ~/.local/bin/dropbox start
 exec --no-startup-id ~/scripts/remap_keys.sh
+exec --no-startup-id ~/scripts/load_xrdb.sh
 
 exec --no-startup-id killall -q notify-osd
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
