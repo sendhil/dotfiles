@@ -44,7 +44,7 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+d exec dmenu_run
 bindsym $mod+space exec rofi -combi-modi window#drun -show combi -modi combi
-bindsym $mod+Shift+b exec /home/sendhil/scripts/rofi-chrome-bookmarks.sh
+bindsym $mod+Shift+b exec ~/scripts/rofi-chrome-bookmarks.sh
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # bindsym $mod+space exec --no-startup-id i3-dmenu-desktop
 
