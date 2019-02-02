@@ -5,6 +5,7 @@ set t_Co=256
 let g:airline_theme='murmur'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_section_y=""
+let g:airline_skip_empty_sections = 1
 
 function! VimGoAirline(...)
   if &filetype == 'go'
