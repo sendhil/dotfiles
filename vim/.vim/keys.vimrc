@@ -69,6 +69,7 @@ au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <leader>c <Plug>(go-callers)
 au FileType go nmap <leader>r <Plug>(go-referrers)
 au FileType go nmap <leader>d :GoDecls<CR>
+au FileType go nmap <leader>D :GoDeclsDir<CR>
 
 " Javascript
 au FileType javascript nmap <leader>jd :JsDoc<CR>
