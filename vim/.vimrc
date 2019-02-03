@@ -70,6 +70,7 @@ Plug 'saltstack/salt-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 Plug 'sebdah/vim-delve'
+Plug 'vim-ctrlspace/vim-ctrlspace'
 
 " Typescript
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}

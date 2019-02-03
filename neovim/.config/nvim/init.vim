@@ -74,6 +74,7 @@ Plug 'sebdah/vim-delve'
 " Typescript
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'vim-ctrlspace/vim-ctrlspace'
 
 if has("win32") 
 Plug 'vim-scripts/mru.vim'
