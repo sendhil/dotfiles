@@ -19,7 +19,7 @@ Plug 'tpope/vim-bundler'
 Plug 'jvirtanen/vim-cocoapods'
 Plug 'https://github.com/altercation/vim-colors-solarized.git'
 Plug 'tomtom/tcomment_vim'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'xolox/vim-easytags'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -70,6 +70,7 @@ Plug 'saltstack/salt-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 Plug 'sebdah/vim-delve'
+Plug 'vim-ctrlspace/vim-ctrlspace'
 
 " Typescript
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}

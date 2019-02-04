@@ -13,9 +13,9 @@ map <expr> <C-N> (empty(getloclist(1))  ? ":cn" : ":lnext")."\n"
 map <expr> <C-P> (empty(getloclist(0))  ? ":cp" : ":lp")."\n"
 
 " nmap <Leader>f :LAg<CR>
-" nmap <Leader>F :LAg 
+" nmap <Leader>F :LAg
 nmap <Leader>f :Rg<CR>
-nmap <Leader>F :Rg 
+nmap <Leader>F :Rg
 
 nnoremap <F6> "=strftime("%FT%T%z")<CR>P
 
@@ -69,6 +69,10 @@ au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <leader>c <Plug>(go-callers)
 au FileType go nmap <leader>r <Plug>(go-referrers)
 au FileType go nmap <leader>d :GoDecls<CR>
+au FileType go nmap <leader>D :GoDeclsDir<CR>
 
 " Javascript
 au FileType javascript nmap <leader>jd :JsDoc<CR>
+
+" Ctrl-Space
+let g:CtrlSpaceDefaultMappingKey = "<C-space> "

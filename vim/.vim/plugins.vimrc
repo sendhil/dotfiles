@@ -105,6 +105,11 @@ set rtp+=/usr/local/opt/fzf
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
+" Ctrl-Space
+if executable("rg")
+  let g:CtrlSpaceGlobCommand = 'rg -g ""'
+endif 
+
 " Neomake
 " Look for local eslint and if not use globally installed one
 let g:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')

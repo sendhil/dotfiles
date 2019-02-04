@@ -19,7 +19,7 @@ Plug 'tpope/vim-bundler'
 Plug 'jvirtanen/vim-cocoapods'
 Plug 'https://github.com/altercation/vim-colors-solarized.git'
 Plug 'tomtom/tcomment_vim'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'xolox/vim-easytags'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -74,6 +74,7 @@ Plug 'sebdah/vim-delve'
 " Typescript
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'vim-ctrlspace/vim-ctrlspace'
 
 if has("win32") 
 Plug 'vim-scripts/mru.vim'
