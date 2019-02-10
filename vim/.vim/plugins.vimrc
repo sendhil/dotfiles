@@ -107,7 +107,7 @@ autocmd FileType html,css EmmetInstall
 
 " Ctrl-Space
 if executable("rg")
-  let g:CtrlSpaceGlobCommand = 'rg -g ""'
+  let g:CtrlSpaceGlobCommand = 'rg --smart-case --hidden --follow --no-heading --files'
 endif 
 
 " Neomake
