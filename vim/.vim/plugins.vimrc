@@ -88,6 +88,7 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_info_mode='guru'
 
+let g:ale_lint_on_text_changed = 'never'
 let g:ale_sign_error = '⤫'
 let g:ale_sign_warning = '⚠'
 
@@ -113,9 +114,9 @@ endif
 " Neomake
 " Look for local eslint and if not use globally installed one
 let g:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
-let g:neomake_javascript_enabled_makers = ['eslint']
-let g:neomake_javascript_eslint_exe=substitute(g:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
-autocmd! BufWritePost * Neomake
+" let g:neomake_javascript_enabled_makers = ['eslint']
+" let g:neomake_javascript_eslint_exe=substitute(g:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+" autocmd! BufWritePost * Neomake
 
 set grepprg=rg\ --vimgrep
 

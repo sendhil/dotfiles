@@ -1,7 +1,7 @@
 let mapleader=','
-map <C-h> <C-w>h map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+" map <C-h> <C-w>h map <C-j> <C-w>j
+" map <C-k> <C-w>k
+" map <C-l> <C-w>l
 if has("win32")
     map <C-e> :MRU<CR>
 else
@@ -9,8 +9,8 @@ else
   endif
 
 " List Navigation
-map <expr> <C-N> (empty(getloclist(1))  ? ":cn" : ":lnext")."\n"
-map <expr> <C-P> (empty(getloclist(0))  ? ":cp" : ":lp")."\n"
+map <expr> <C-n> (empty(getloclist(1))  ? ":cn" : ":lnext")."\n"
+map <expr> <C-p> (empty(getloclist(0))  ? ":cp" : ":lp")."\n"
 
 " nmap <Leader>f :LAg<CR>
 " nmap <Leader>F :LAg
@@ -30,7 +30,6 @@ map <leader>st :tab split<CR>
 
 :nmap <leader>. :CtrlPTag<CR>
 let g:ctrlp_map = '<leader>t'
-
 nmap <silent> <F5> :set spell!<CR>
 
 :nmap \e :NERDTreeToggle<CR>
