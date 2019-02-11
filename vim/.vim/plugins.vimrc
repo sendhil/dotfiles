@@ -102,6 +102,9 @@ set re=1
 "FZF
 set rtp+=/usr/local/opt/fzf
 
+command! -bang -nargs=* GFiles call fzf#vim#gitfiles('', fzf#vim#with_preview('right'))
+command! -bang -nargs=* GitFiles call fzf#vim#gitfiles('', fzf#vim#with_preview('right'))
+
 " Emmet
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
