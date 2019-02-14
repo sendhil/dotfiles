@@ -121,6 +121,9 @@ bindsym $mod+minus scratchpad show
 # Alt Tab like functionality
 bindsym $mod+Tab workspace back_and_forth
 
+# Screenshot
+bindsym Shift+Ctrl+4 exec flameshot gui
+
 # focus the child container
 #bindsym $mod+d focus child
 
