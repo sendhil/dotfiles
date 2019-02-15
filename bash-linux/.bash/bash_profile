@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if [ -f ~/.bash_local ]; then
+  source ~/.bash_local
+fi
+
 source ~/.bash/bash_aliases
 source ~/.bash/fzf_related
 source ~/.bash/utilities

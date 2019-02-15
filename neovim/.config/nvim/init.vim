@@ -54,6 +54,7 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'easymotion/vim-easymotion'
 Plug 'Shougo/neosnippet.vim'
 Plug 'vim-syntastic/syntastic'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'rakr/vim-one'
 Plug 'ryanoasis/vim-devicons'
