@@ -120,15 +120,19 @@ let g:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
 " let g:neomake_javascript_enabled_makers = ['eslint']
 " let g:neomake_javascript_eslint_exe=substitute(g:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 " autocmd! BufWritePost * Neomake
+"
 
-set grepprg=rg\ --vimgrep
+if executable("rg")
+endif
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " Use The Silver Searcher, if it's available
 if executable('rg')
-  set grepprg=rg\ --color=never
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
   let g:ctrlp_use_caching = 0
+  set grepprg=rg\ --vimgrep\ --no-heading\ --ignore-case
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+  let g:ackprg = 'rg --vimgrep --no-heading --ignore-case'
 else
   " Refresh Ctrl-P when vim gains focus or a file is written
   if has("autocmd")
