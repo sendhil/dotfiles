@@ -24,4 +24,5 @@ fi
 
 export NVM_DIR="/Users/sendhil/.nvm"
 export GOPATH=$HOME/go
+export BAT_THEME="TwoDark"
 export PATH=$PATH:~/.cargo/bin:$GOPATH/bin:~/src/google-cloud-sdk/bin:~/.local/bin
