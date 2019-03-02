@@ -23,6 +23,10 @@ alias git_cleanup='git branch --merged develop | grep -Ev "(master|release|hotfi
 # Kitty
 alias d="kitty +kitten diff"
 
+# Dunst
+alias dunstpause="killall -SIGUSR1 dunst"
+alias dunstresume="killall -SIGUSR2 dunst"
+
 export COCOAPODS_DISABLE_DETERMINISTIC_UUIDS=true
 export EDITOR=nvim
 
