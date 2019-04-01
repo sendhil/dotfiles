@@ -22,6 +22,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# Set Vi Mode
+set -o vi
+
 export NVM_DIR="/Users/sendhil/.nvm"
 export GOPATH=$HOME/go
 export BAT_THEME="TwoDark"
