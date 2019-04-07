@@ -22,7 +22,7 @@ rofi_dmenu(){
 }
 
 main() {
-  url=$(~/go/bin/chromebookmarks --json-file-name "$1"  | rofi_dmenu | xargs -i -0 ~/go/bin/chromebookmarks --find-bookmark-url --json-file-name "$1" "{}")
+  url=$(~/go/bin/chromebookmarks --json-file-name "$1"  | rofi_dmenu | xargs -i -0 ~/go/bin/chromebookmarks --json-file-name "$1" --find-bookmark-url "{}")
   xdg-open "$url"
 }
 
