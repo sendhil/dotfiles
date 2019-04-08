@@ -24,6 +24,7 @@ fi
 
 # Set Vi Mode
 set -o vi
+bindkey "^R" history-incremental-search-backward
 
 export NVM_DIR="/Users/sendhil/.nvm"
 export GOPATH=$HOME/go
