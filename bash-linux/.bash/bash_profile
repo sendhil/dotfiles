@@ -27,6 +27,7 @@ set -o vi
 
 export NVM_DIR="/Users/sendhil/.nvm"
 export GOPATH=$HOME/go
+export GOROOT=/usr/lib/golang
 export BAT_THEME="TwoDark"
-export PATH=$PATH:~/.cargo/bin:$GOPATH/bin:~/src/google-cloud-sdk/bin:~/.local/bin
+export PATH=~/.cargo/bin:$GOPATH/bin:$GOROOT/bin:~/src/google-cloud-sdk/bin:~/.local/bin:$PATH
 export LESS=FRX
