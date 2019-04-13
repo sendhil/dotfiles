@@ -42,6 +42,8 @@ nmap <Leader>a> :Tabularize /=><CR>
 xmap \\ :TComment<CR>
 nmap \\ :TComment<CR>
 
+nmap <Leader>p :Commands<CR>
+
 " Unite
 nnoremap <space>s :Denite buffer<cr>
 call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
