@@ -86,7 +86,8 @@ let g:go_gocode_unimported_packages = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
-let g:go_info_mode='guru'
+let g:go_info_mode='gopls'
+let g:go_def_mode='gopls'
 
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_sign_error = '⤫'
