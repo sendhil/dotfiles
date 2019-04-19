@@ -100,9 +100,7 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# Redshift (Night Light) - Inspired from https://tutorialinux.com/want-to-keep-your-eyes-healthy-use-redshift/
-bindsym $mod+Shift+i exec redshift "-l47.62:-122.21" -t 3700:3700 # -g 0.5
-bindsym $mod+Shift+u exec pkill redshift
+bindsym $mod+Shift+i exec i3-input
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
