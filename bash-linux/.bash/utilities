@@ -105,5 +105,10 @@ function findtodos {
 # From https://stackoverflow.com/questions/23070245/get-all-files-modified-in-last-30-days-in-a-directory
 function filesmodifiedwithin {
   n=$1
-  find . -type f -mtime -$1 -exec ls -l {} \;
+  find . -type f -mtime -$n -exec ls -l {} \;
+}
+
+function reviewfilesmodifiedwithin {
+  n=$1
+  filesmodifiedwithin $n | awk '{print $9}' | xargs bat
 }
