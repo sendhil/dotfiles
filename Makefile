@@ -8,7 +8,7 @@ all: stow gitconfig
 stow:
 	@mkdir -p ~/DesktopBackgrounds
 	@mkdir -p ~/scripts
-	@stow -t ~ alacritty compton dunst kitty neovim termite vim bash-linux dircolors i3 tmux fonts linux-config gcalcli
+	@stow -t ~ alacritty compton dunst kitty neovim termite vim bash-linux dircolors i3 tmux fonts linux-config gcalcli bat
 	@stow -t ~ $(POLYBAR_CONFIG)
 	@stow -t ~/DesktopBackgrounds desktop-backgrounds
 	@stow -t ~/scripts scripts
@@ -16,7 +16,7 @@ stow:
 
 .PHONY: unstow
 unstow:
-	@stow -D -t ~ alacritty compton dunst kitty neovim termite vim bash-linux dircolors i3 tmux fonts linux-config gcalcli
+	@stow -D -t ~ alacritty compton dunst kitty neovim termite vim bash-linux dircolors i3 tmux fonts linux-config gcalcli bat
 	@stow -D -t ~ $(POLYBAR_CONFIG)
 	@stow -D -t ~/DesktopBackgrounds desktop-backgrounds
 	@stow -D -t ~/scripts scripts
