@@ -112,3 +112,7 @@ function reviewfilesmodifiedwithin {
   n=$1
   filesmodifiedwithin $n | awk '{print $9}' | xargs bat
 }
+
+function bat-allfilesrecursively {
+  find . -type f | xargs bat
+}
