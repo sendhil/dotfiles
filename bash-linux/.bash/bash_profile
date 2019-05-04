@@ -26,6 +26,7 @@ fi
 set -o vi
 bindkey "^R" history-incremental-search-backward
 
+export REVIEW_BASE=master
 export NVM_DIR="/Users/sendhil/.nvm"
 export GOPATH=$HOME/go
 export GOROOT=/usr/lib/golang
