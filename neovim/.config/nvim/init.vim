@@ -55,7 +55,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'Shougo/neosnippet.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" Forked fzf.vim as I wanted to add a few options. At some submit back.
+Plug 'sendhil/fzf.vim'
 Plug 'rakr/vim-one'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Shougo/denite.nvim'
