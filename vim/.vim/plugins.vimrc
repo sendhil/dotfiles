@@ -13,6 +13,9 @@ smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 let g:neosnippet#snippets_directory='~/.vim/plugged/vim-snippets/snippets'
+let g:neosnippet#disable_runtime_snippets = {
+        \   '_' : 1,
+        \ }
 
 " deoplete tab-complete
 "neocomplete#start_manual_complete()
