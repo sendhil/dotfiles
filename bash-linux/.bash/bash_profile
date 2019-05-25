@@ -25,6 +25,7 @@ fi
 # Set Vi Mode
 set -o vi
 bindkey "^R" history-incremental-search-backward
+bindkey '^x^e' edit-command-line
 
 export REVIEW_BASE=master
 export NVM_DIR="/Users/sendhil/.nvm"
