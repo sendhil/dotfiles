@@ -17,7 +17,7 @@ map <expr> <C-p> (empty(getloclist(0))  ? ":cp" : ":lp")."\n"
 nmap <Leader>f :Rg<CR>
 nmap <Leader>F :Rg
 
-nnoremap <F6> "=strftime("%FT%T%z")<CR>P
+" nnoremap <F6> "=strftime("%FT%T%z")<CR>P
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>ew :e %%
@@ -68,7 +68,7 @@ au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
 au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <leader>c <Plug>(go-callers)
-au FileType go nmap <leader>r <Plug>(go-referrers)
+au FileType go nmap gr <Plug>(go-referrers)
 au FileType go nmap <leader>d :GoDecls<CR>
 au FileType go nmap <leader>D :GoDeclsDir<CR>
 

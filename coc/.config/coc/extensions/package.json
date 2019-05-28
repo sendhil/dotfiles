@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "coc-emoji": "^1.2.3",
+    "coc-highlight": "^1.1.2",
+    "coc-json": "^1.0.17",
+    "coc-python": "^1.1.10",
+    "coc-rls": "^1.1.0",
+    "coc-sh": "^0.2.1",
+    "coc-snippets": "^2.0.10",
+    "coc-tslint-plugin": "^1.0.4",
+    "coc-tsserver": "^1.2.2",
+    "coc-yaml": "^1.0.1",
+    "dockerfile-language-server-nodejs": "^0.0.21"
+  }
+}
