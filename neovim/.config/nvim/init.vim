@@ -3,10 +3,13 @@
 call plug#begin('~/.vim/plugged') 
 
 if has("nvim") 
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " autocompletion framework
-    Plug 'zchee/deoplete-go', { 'do': 'make'}
-    Plug 'zchee/deoplete-jedi' " autocompletion source
-    Plug 'w0rp/ale' " using flake8
+  " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " autocompletion framework
+  " Plug 'zchee/deoplete-go', { 'do': 'make'}
+  " Plug 'zchee/deoplete-jedi' " autocompletion source
+  " Plug 'w0rp/ale' " using flake8
+  "
+  " Install nightly build, replace ./install.sh with install.cmd on windows
+  Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 endif
 
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
@@ -78,7 +81,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 
 if has("win32") 
-Plug 'vim-scripts/mru.vim'
+  Plug 'vim-scripts/mru.vim'
 endif
 
 call plug#end()
@@ -87,13 +90,13 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-h
 
 "TODO: Figure out variables to reduce this duplication
 if has("win32") 
-    source $HOME/vimfiles/general.vimrc
-    source $HOME/vimfiles/plugins.vimrc
-    source $HOME/vimfiles/line.vimrc
-    source $HOME/vimfiles/keys.vimrc
+  source $HOME/vimfiles/general.vimrc
+  source $HOME/vimfiles/plugins.vimrc
+  source $HOME/vimfiles/line.vimrc
+  source $HOME/vimfiles/keys.vimrc
 else
-    source $HOME/.vim/general.vimrc
-    source $HOME/.vim/plugins.vimrc
-    source $HOME/.vim/line.vimrc
-    source $HOME/.vim/keys.vimrc
+  source $HOME/.vim/general.vimrc
+  source $HOME/.vim/plugins.vimrc
+  source $HOME/.vim/line.vimrc
+  source $HOME/.vim/keys.vimrc
 endif
