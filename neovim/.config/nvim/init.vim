@@ -12,8 +12,6 @@ if has("nvim")
   Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 endif
 
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
-
 Plug 'mileszs/ack.vim'
 Plug 'rking/ag.vim' 
 Plug 'vim-airline/vim-airline' 
@@ -56,7 +54,6 @@ Plug 'sendhil/vim-snippets'
 " Plug 'benjie/neomake-local-eslint.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'Shougo/neosnippet.vim'
-Plug 'vim-syntastic/syntastic'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Forked fzf.vim as I wanted to add a few options. At some submit back.
 Plug 'sendhil/fzf.vim'
