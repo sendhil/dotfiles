@@ -5,7 +5,7 @@ let mapleader=','
 if has("win32")
     map <C-e> :MRU<CR>
 else
-    map <C-e> :Denite file_mru<CR>
+    map <C-e> :History<CR>
   endif
 
 " List Navigation
@@ -45,7 +45,6 @@ nmap \\ :TComment<CR>
 nmap <Leader>p :Commands<CR>
 
 " Unite
-nnoremap <space>s :Denite buffer<cr>
 call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
 call denite#custom#map('insert', '<C-n>', '<denite:move_to_next_line>', 'noremap')
 call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
