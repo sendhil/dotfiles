@@ -42,6 +42,8 @@ nmap <Leader>a> :Tabularize /=><CR>
 xmap \\ :TComment<CR>
 nmap \\ :TComment<CR>
 
+nmap T :terminal<CR> :startinsert<CR>
+
 nmap <Leader>p :Commands<CR>
 
 " Unite
