@@ -3,6 +3,10 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
+  "python.analysis.downloadChannel": "daily",
+  "python.globalModuleInstallation": true,
+  "python.envFile": "${workspaceFolder}/.env",
+  "suggest.noselect": false,
   "languageserver": {
     "golang": {
       "command": "gopls",
