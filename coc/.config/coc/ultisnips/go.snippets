@@ -106,6 +106,13 @@ snippet json "JSON field"
 \`json:"${1:displayName}"\`
 endsnippet
 
+
+snippet testfunc "Test Function"
+func Test${1:name}(t *testing.T) {
+	${2:body}
+}
+endsnippet
+
 # vim:ft=snippets:
 
 # error handling
