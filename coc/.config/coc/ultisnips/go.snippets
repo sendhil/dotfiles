@@ -113,6 +113,12 @@ func Test${1:name}(t *testing.T) {
 }
 endsnippet
 
+snippet httphandler "HTTP Handler"
+func ${1:name}(rw http.ResponseWriter, req *http.Request) {
+	${2:body}
+}
+endsnippet
+
 # vim:ft=snippets:
 
 # error handling
