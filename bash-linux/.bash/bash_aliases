@@ -11,6 +11,7 @@ alias work-notes="cd ~/Dropbox/lyft-work-notebook"
 alias notes="cd ~/Dropbox/general-notebook"
 alias nightlight='redshift "-l47.62:-122.21" -t 3700:3700'
 alias tree="tree -C"
+alias weather="curl wttr.in"
 
 # Calendar
 alias pcal="gcalcli --configFolder ~/.config/gcalcli/personal"
