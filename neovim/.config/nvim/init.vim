@@ -5,7 +5,8 @@ call plug#begin('~/.vim/plugged')
 if has("nvim") 
   " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " autocompletion framework
   " Plug 'zchee/deoplete-go', { 'do': 'make'}
-  " Plug 'zchee/deoplete-jedi' " autocompletion source Plug 'w0rp/ale' " using flake8
+  " Plug 'zchee/deoplete-jedi' " autocompletion source
+  " Plug 'w0rp/ale' " using flake8
   "
   " Install nightly build, replace ./install.sh with install.cmd on windows
   Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
@@ -26,11 +27,11 @@ Plug 'fatih/vim-go'
 Plug 'othree/html5.vim'
 Plug 'claco/jasmine.vim'
 Plug 'moll/vim-node'
+Plug 'StanAngeloff/php.vim'
 Plug 'tpope/vim-rails'
 Plug 'hallison/vim-rdoc'
 Plug 'mtth/scratch.vim'
 Plug 'kana/vim-smartinput'
-" Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'keith/swift.vim'
 Plug 'godlygeek/tabular'
@@ -63,15 +64,16 @@ Plug 'ap/vim-css-color'
 Plug 'mattn/emmet-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
+Plug 'leafgarland/typescript-vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'saltstack/salt-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 Plug 'sebdah/vim-delve'
-" Typescript syntax highlighting
-Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
 
+" Typescript
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 
 if has("win32") 
