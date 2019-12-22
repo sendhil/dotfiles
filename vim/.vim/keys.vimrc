@@ -28,13 +28,14 @@ map <leader>et :tabe %%
 map <leader>ct :tabclose<CR>
 map <leader>st :tab split<CR>
 
-:nmap <leader>. :CtrlPTag<CR>
+nmap <leader>. :CtrlPTag<CR>
 let g:ctrlp_map = '<leader>t'
 nmap <silent> <F5> :set spell!<CR>
 
-:nmap \e :NERDTreeToggle<CR>
-:nmap \t :TagbarToggle<CR>
+nmap \e :NERDTreeToggle<CR>
+nmap \t :TagbarToggle<CR>
 
+nmap = :Format<CR>
 nmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a{ :Tabularize /{<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
@@ -43,6 +44,7 @@ xmap \\ :TComment<CR>
 nmap \\ :TComment<CR>
 
 nmap T :terminal<CR> :startinsert<CR>
+nnoremap <leader>ov :exe ':silent !code %'<CR>:redraw!<CR>
 
 nmap <Leader>p :Commands<CR>
 
