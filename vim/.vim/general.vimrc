@@ -11,6 +11,14 @@ set expandtab
 set hidden
 set ruler
 
+" Useful for debugging slow syntax highlighting
+" syntime on 
+
+" set regexpengine=1
+" set lazyredraw   " don't redraw everytime
+" set synmaxcol=128  " avoid slow rendering for long lines
+" syntax sync minlines=64  " faster syntax hl
+
 " Disable Python 2
 let g:loaded_python_provider = 1
 

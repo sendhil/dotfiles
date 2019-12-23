@@ -118,52 +118,11 @@ let g:lightline = {
       \ }
 " End coc.nvim config
 
-" "
-" " inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "<C-x><C-o>"
-" inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : deoplete#start_manual_complete()
-" " ,<Tab> for regular tab
-" inoremap <Leader><Tab> <Space><Space>
-
-" <C-h>, <BS>: close popup and delete backword char.
-" inoremap <expr><C-h> deoplete#smart_close_popup()."\<C-h>"
-" inoremap <expr><BS> deoplete#smart_close_popup()."\<C-h>"
-
-" omnifuncs
-" augroup omnifuncs
-"   autocmd!
-"   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-"   autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-"   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-"   autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-"   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-" augroup end
-  
-" tern
-if exists('g:plugs["tern_for_vim"]')
-  let g:tern_show_argument_hints = 'on_hold'
-  let g:tern_show_signature_in_pum = 1
-  autocmd FileType javascript setlocal omnifunc=tern#Complete
-  autocmd FileType javascript nnoremap <silent> <buffer> gd :TernDef<CR>
-endif
-
-let g:easytags_async = 1
-let g:easytags_suppress_ctags_warning = 1
-
-"YouCompleteMe Config
-let g:ycm_autoclose_preview_window_after_insertion=1
-
-"Ultisnips Config
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
-" Javascript
-let g:used_javascript_libs = 'underscore,react,lodash,chai'
-let g:jsx_ext_required = 0
+" let g:easytags_async = 1
+" let g:easytags_suppress_ctags_warning = 1
 
 " GoLang
 let g:go_fmt_command = "goimports"
-
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -175,7 +134,6 @@ let g:go_highlight_types = 1
 let g:go_gocode_unimported_packages = 1
 let g:go_info_mode='gopls'
 let g:go_def_mode='godef'
-
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_sign_error = '⤫'
 let g:ale_sign_warning = '⚠'
@@ -183,7 +141,7 @@ let g:ale_sign_warning = '⚠'
 " Hacks to fix the syntax coloring problem with vim-go. See https://github.com/fatih/vim-go/issues/145.
 set nocursorcolumn
 "syntax sync minlines=256
-set re=1
+" set re=1
 "set synmaxcol=128
 "
 
@@ -193,10 +151,6 @@ set rtp+=/usr/local/opt/fzf
 command! -bang -nargs=* GFiles call fzf#vim#gitfiles('', fzf#vim#with_preview('right'))
 command! -bang -nargs=* GitFiles call fzf#vim#gitfiles('', fzf#vim#with_preview('right'))
 let g:fzf_commands_insert_carriage_return = 1
-
-" Emmet
-let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
 
 " Ctrl-Space
 if executable("rg")
@@ -210,9 +164,6 @@ let g:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
 " let g:neomake_javascript_eslint_exe=substitute(g:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 " autocmd! BufWritePost * Neomake
 "
-
-if executable("rg")
-endif
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " Use The Silver Searcher, if it's available
