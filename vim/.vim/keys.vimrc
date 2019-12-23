@@ -35,11 +35,10 @@ nmap <silent> <F5> :set spell!<CR>
 nmap \e :NERDTreeToggle<CR>
 nmap \t :TagbarToggle<CR>
 
-nmap = :Format<CR>
-nmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a{ :Tabularize /{<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
-nmap <Leader>a> :Tabularize /=><CR>
+" nmap <Leader>a= :Tabularize /=<CR>
+" nmap <Leader>a{ :Tabularize /{<CR>
+" nmap <Leader>a: :Tabularize /:\zs<CR>
+" nmap <Leader>a> :Tabularize /=><CR>
 xmap \\ :TComment<CR>
 nmap \\ :TComment<CR>
 
