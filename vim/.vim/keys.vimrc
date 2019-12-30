@@ -88,5 +88,8 @@ au FileType go nmap <leader>D :GoDeclsDir<CR>
 " Javascript
 au FileType javascript nmap <leader>jd :JsDoc<CR>
 
+" Python
+au FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+
 " Ctrl-Space
 let g:CtrlSpaceDefaultMappingKey = "<C-space> "
