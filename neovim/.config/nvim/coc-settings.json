@@ -8,6 +8,7 @@
   "python.envFile": "${workspaceFolder}/.env",
   "suggest.noselect": false,
   "suggest.snippetIndicator": "►",
+  "npm.binPath": "yarn",
   "languageserver": {
     "golang": {
       "command": "gopls",
