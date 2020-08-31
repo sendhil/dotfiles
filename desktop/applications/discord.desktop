@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Discord
+Type=Application
+Terminal=false
+Icon=discord
+Exec=/usr/bin/google-chrome --app=https://discord.com/app
+Comment=Discord WebView
+StartupWMClass=lyft.discord.com_chrome
