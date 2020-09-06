@@ -41,3 +41,6 @@ if [ -f ~/.local/bin/virtualenvwrapper_lazy.sh ]; then
   export PROJECT_HOME=$HOME/src
   source ~/.local/bin/virtualenvwrapper_lazy.sh
 fi
+
+# Colored Man Pages
+export MANPAGER="nvim -c 'set ft=man' -"
