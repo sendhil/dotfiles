@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
-if xrandr | grep --quiet 2560x1440; then
-  echo polybar-laptop
-else
+if xrandr | grep --quiet 3440x1440; then
   echo polybar
+else
+  echo polybar-laptop
 fi 
