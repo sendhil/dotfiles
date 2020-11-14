@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Obsidian
-Type=Application
-Terminal=false
-Icon=obsidian
-Exec=/home/sendhil/.local/bin/Obsidian.AppImage
-Comment=Obsidian
-StartupWMClass=Obsidian
