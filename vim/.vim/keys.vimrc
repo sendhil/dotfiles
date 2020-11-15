@@ -72,6 +72,9 @@ function! s:show_documentation()
   endif
 endfunction
 
+" Man Pages
+au FileType man nmap gd :Man<CR>
+
 " Go
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>bt <Plug>(go-test-compile)
