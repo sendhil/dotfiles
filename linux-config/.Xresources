@@ -1,7 +1,7 @@
 #if WIDTH == 3440
   Xft.dpi: 125
 #else
-  Xft.dpi: 175
+  Xft.dpi: 192
 #endif
 
 ! From - https://github.com/FranciscoDumont/dotfiles/blob/master/.Xresources
