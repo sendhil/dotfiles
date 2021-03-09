@@ -1,5 +1,5 @@
 #if WIDTH == 3440
-  Xft.dpi: 125
+  Xft.dpi: 120
 #else
   Xft.dpi: 192
 #endif
