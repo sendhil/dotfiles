@@ -96,4 +96,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.bash/bash_profile
 
-[ -f ~/.bash/.fzf.zsh ] && source ~/.bash/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
