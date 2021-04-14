@@ -233,3 +233,4 @@ exec --no-startup-id lxpolkit & #alternative to gnome-polkit
 exec --no-startup-id xinput --list --name-only | grep "Synaptics" | xargs -n 1 -I {} xinput set-prop "{}" "libinput Natural Scrolling Enabled" 1   # Might need to mess around with this to get it to work properly with laptop/desktop
 exec --no-startup-id xinput --list --name-only | grep "Synaptics" | xargs -n 1 -I {} xinput set-prop "{}" "libinput Click Method Enabled" 0 1 # Right click via touch pad
 exec --no-startup-id unclutter & # Hides the mouse after a period inactivity
+exec --no-startup-id setxkbmap -layout us -option caps:escape
