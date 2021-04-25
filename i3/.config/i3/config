@@ -92,6 +92,8 @@ bindsym $mod+bar split h
 #bindsym $mod+v split v
 bindsym $mod+Shift+Ctrl+v split v
 
+bindsym $mod+t split toggle
+
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
