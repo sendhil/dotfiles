@@ -119,5 +119,9 @@ function bat-allfilesrecursively {
 
 function timer() {
     n=$1
-    countdown "$n" && i3-nagbar -m "$n timer is over" -t warning
+    if [[ $OSTYPE == 'darwin'* ]]; then
+      countdown "$n" && hs -c 'hs.alert.show("Timer is done", 10)'
+    else
+      countdown "$n" && i3-nagbar -m "$n timer is over" -t warning
+    fi
 }
