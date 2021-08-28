@@ -6,6 +6,7 @@ all: stow gitconfig
 
 .PHONY: stow
 stow:
+	$(shell ./non-linked-scripts/generate-kitty-overrides.sh)
 	@mkdir -p ~/DesktopBackgrounds
 	@mkdir -p ~/scripts
 	@stow -t ~ compton dunst kitty neovim vim bash-linux dircolors i3 tmux fonts linux-config bat coc prezto
