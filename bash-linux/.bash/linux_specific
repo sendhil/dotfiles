@@ -3,3 +3,7 @@
 export CURRENT_OS="linux"
 export GOPATH=$HOME/go
 export GOROOT=/usr/lib/golang
+
+# Prezto defines this
+unalias pbcopy
+alias pbcopy='xclip -selection clipboard -i'
