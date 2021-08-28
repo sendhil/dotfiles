@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+source ~/.bash/os_specific
 source ~/.bash/bash_aliases
 source ~/.bash/fzf_related
 source ~/.bash/utilities
@@ -22,14 +23,6 @@ bindkey '^x^e' edit-command-line
 
 export REVIEW_BASE=master
 export NVM_DIR="/Users/sendhil/.nvm"
-
-if [[ $OSTYPE == 'darwin'* ]]; then
-    export GOPATH=$HOME/golang
-    export GOROOT=/opt/homebrew/opt/go/libexec
-else
-    export GOPATH=$HOME/go
-    export GOROOT=/usr/lib/golang
-fi
 
 export BAT_THEME="TwoDark"
 export PATH=~/.cargo/bin:$GOPATH/bin:$GOROOT/bin:~/src/google-cloud-sdk/bin:~/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [[ $OSTYPE == 'darwin'* ]]; then
+    source ~/.bash/mac_specific
+else
+    source ~/.bash/linux_specific
+fi

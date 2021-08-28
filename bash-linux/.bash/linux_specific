@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export CURRENT_OS="linux"
+export GOPATH=$HOME/go
+export GOROOT=/usr/lib/golang
