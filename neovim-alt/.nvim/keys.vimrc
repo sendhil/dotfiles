@@ -12,13 +12,15 @@ map <leader>st :tab split<CR>
 nmap T :terminal<CR> :startinsert<CR>
 nnoremap <leader>ov :exe ':silent !code %'<CR>:redraw!<CR>
 
-nmap <Leader>p :Commands<CR> "TODO: Revisit
-
 " Man Pages
 au FileType man nmap gd :Man<CR>
 
 " Ctrl-Space
 let g:CtrlSpaceDefaultMappingKey = "<C-space> "
+
+" tomtom/tcomment_vim
+xmap \\ :TComment<CR>
+nmap \\ :TComment<CR>
 
 " Telescope Shortcuts
 lua << EOF
@@ -35,6 +37,7 @@ vim.api.nvim_set_keymap('n', '<leader>sp', [[<cmd>lua require('telescope.builtin
 vim.api.nvim_set_keymap('n', '<leader>so', [[<cmd>lua require('telescope.builtin').tags{ only_current_buffer = true }<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>sca', [[<cmd>lua require('telescope.builtin').lsp_code_actions(require('telescope.themes').get_cursor())<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>?', [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-e>', [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>p', [[<cmd>lua require('telescope.builtin').commands()<CR>]], { noremap = true, silent = true })
 
 -- One <Esc> in insert mode instead of two to quit

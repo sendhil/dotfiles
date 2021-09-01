@@ -7,6 +7,22 @@ lua << EOF
       additional_vim_regex_highlighting = false,
     },
   }
+
+  require("indent_blankline").setup {
+    char = "|",
+    buftype_exclude = {"terminal"}
+  }
+
+  -- Gitsigns
+  require('gitsigns').setup {
+    signs = {
+      add = { hl = 'GitGutterAdd', text = '+' },
+      change = { hl = 'GitGutterChange', text = '~' },
+      delete = { hl = 'GitGutterDelete', text = '_' },
+      topdelete = { hl = 'GitGutterDelete', text = '‾' },
+      changedelete = { hl = 'GitGutterChange', text = '~' },
+    },
+  }
 EOF
 
 source $HOME/.nvim/lsp.vimrc
