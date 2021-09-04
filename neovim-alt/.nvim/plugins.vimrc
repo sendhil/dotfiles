@@ -50,16 +50,3 @@ set nocursorcolumn
 if executable("rg")
   let g:CtrlSpaceGlobCommand = 'rg --smart-case --hidden --follow --no-heading --files'
 endif 
-
-" Add diagnostic info for https://github.com/itchyny/lightline.vim
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'cocstatus': 'coc#status'
-      \ },
-      \ }
-
