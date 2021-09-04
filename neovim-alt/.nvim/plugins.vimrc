@@ -27,7 +27,8 @@ EOF
 
 source $HOME/.nvim/lsp.vimrc
 
-let NERDTreeShowHidden=1
+let g:NERDTreeShowHidden=1
+let g:NERDTreeQuitOnOpen = 1 
 
 set hidden
 
