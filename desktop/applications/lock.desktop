@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Lock
 Comment=Lock Screen
-Exec=/home/sendhil/scripts/lock.sh
+Exec=/home/sendhil/src/dotfiles/scripts/lock.sh
 Type=Application

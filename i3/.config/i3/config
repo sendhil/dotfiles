@@ -44,8 +44,8 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+d exec dmenu_run
 bindsym $mod+space exec rofi -combi-modi window#drun -show combi -modi combi
-bindsym $mod+Shift+b exec ~/scripts/rofi-chrome-bookmarks.sh work.json
-bindsym $mod+Shift+Ctrl+b exec ~/scripts/rofi-chrome-bookmarks.sh home.json
+bindsym $mod+Shift+b exec ~/src/dotfiles/scripts/rofi-chrome-bookmarks.sh work.json
+bindsym $mod+Shift+Ctrl+b exec ~/src/dotfiles/scripts/rofi-chrome-bookmarks.sh home.json
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # bindsym $mod+space exec --no-startup-id i3-dmenu-desktop
 
@@ -125,7 +125,7 @@ bindsym $mod+Tab workspace back_and_forth
 bindsym Shift+Ctrl+4 exec flameshot gui
 
 # Select Monitor
-bindsym $mod+F3 exec ~/scripts/display-select.sh
+bindsym $mod+F3 exec ~/src/dotfiles/scripts/display-select.sh
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -223,15 +223,15 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # exec --no-startup-id /usr/bin/xrandr --output HDMI-1-3 --off --output DVI-D-0 --off --output HDMI-1-2 --off --output HDMI-1-1 --off --output DP-1-1 --mode 3840x2160 --pos 7680x0 --rotate normal --output HDMI-0 --off --output DP-5 --off --output DP-4 --mode 3840x2160 --pos 0x0 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --primary --mode 3840x2160 --pos 3840x0 --rotate normal
 
 exec --no-startup-id /usr/bin/dropbox start
-# exec --no-startup-id ~/scripts/remap_keys.sh
-exec --no-startup-id ~/scripts/load_xrdb.sh
+# exec --no-startup-id ~/src/dotfiles/scripts/remap_keys.sh
+exec --no-startup-id ~/src/dotfiles/scripts/load_xrdb.sh
 
 exec --no-startup-id killall -q notify-osd
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
-exec --no-startup-id ~/scripts/setup-background.sh
+exec --no-startup-id ~/src/dotfiles/scripts/setup-background.sh
 exec --no-startup-id compton --config ~/.config/compton/compton.conf
 exec --no-startup-id lxpolkit & #alternative to gnome-polkit
 exec --no-startup-id xinput --list --name-only | grep "Synaptics" | xargs -n 1 -I {} xinput set-prop "{}" "libinput Natural Scrolling Enabled" 1   # Might need to mess around with this to get it to work properly with laptop/desktop
 exec --no-startup-id xinput --list --name-only | grep "Synaptics" | xargs -n 1 -I {} xinput set-prop "{}" "libinput Click Method Enabled" 0 1 # Right click via touch pad
-exec --no-startup-id unclutter & # Hides the mouse after a period inactivity
+exec --no-startup-id unclutter & # Hides the mouse after a period of inactivity
 exec --no-startup-id setxkbmap -layout us -option caps:escape

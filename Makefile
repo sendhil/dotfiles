@@ -8,11 +8,9 @@ all: stow gitconfig
 stow:
 	$(shell ./non-linked-scripts/generate-kitty-overrides.sh)
 	@mkdir -p ~/DesktopBackgrounds
-	@mkdir -p ~/scripts
 	@stow -t ~ compton dunst kitty neovim vim bash-linux dircolors i3 tmux fonts linux-config bat coc prezto
 	@stow -t ~ $(POLYBAR_CONFIG)
 	@stow -t ~/DesktopBackgrounds desktop-backgrounds
-	@stow -t ~/scripts scripts
 	@stow -t ~/.local/share desktop
 
 .PHONY: unstow
@@ -20,7 +18,6 @@ unstow:
 	@stow -D -t ~ compton dunst kitty neovim vim bash-linux dircolors i3 tmux fonts linux-config bat coc prezto
 	@stow -D -t ~ $(POLYBAR_CONFIG)
 	@stow -D -t ~/DesktopBackgrounds desktop-backgrounds
-	@stow -D -t ~/scripts scripts
 	@stow -D -t ~/.local/share desktop
 
 .PHONY: gitconfig
