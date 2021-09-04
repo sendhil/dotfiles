@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Suspend
 Comment=Suspend
-Exec=/home/sendhil/src/dotfiles/scripts/suspend.sh
+Exec=/home/sendhil/src/dotfiles/scripts/linux/suspend.sh
 Type=Application

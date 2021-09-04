@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Pause Dunst
 Comment=Pause Dunst
-Exec=/home/sendhil/src/dotfiles/scripts/pause-dunst.sh
+Exec=/home/sendhil/src/dotfiles/scripts/linux/pause-dunst.sh
 Type=Application
