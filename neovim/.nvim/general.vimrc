@@ -42,3 +42,7 @@ EOF
 
 " Formats JSON
 com! FormatJSON %!python -m json.tool
+
+" From - https://superuser.com/questions/195022/vim-how-to-synchronize-nerdtree-with-current-opened-tab-file-path
+" Sets working directory to current file
+autocmd BufEnter * lcd %:p:h
