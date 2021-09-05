@@ -43,9 +43,9 @@ bindsym $mod+Shift+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 bindsym $mod+d exec dmenu_run
-bindsym $mod+space exec rofi -combi-modi window#drun -show combi -modi combi
-bindsym $mod+Shift+b exec ~/src/dotfiles/scripts/linux/rofi-chrome-bookmarks.sh work.json
-bindsym $mod+Shift+Ctrl+b exec ~/src/dotfiles/scripts/linux/rofi-chrome-bookmarks.sh home.json
+# bindsym $mod+space exec rofi -combi-modi window#drun -show combi -modi combi
+# bindsym $mod+Shift+b exec ~/src/dotfiles/scripts/linux/rofi-chrome-bookmarks.sh work.json
+# bindsym $mod+Shift+Ctrl+b exec ~/src/dotfiles/scripts/linux/rofi-chrome-bookmarks.sh home.json
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # bindsym $mod+space exec --no-startup-id i3-dmenu-desktop
 
@@ -223,6 +223,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # exec --no-startup-id /usr/bin/xrandr --output HDMI-1-3 --off --output DVI-D-0 --off --output HDMI-1-2 --off --output HDMI-1-1 --off --output DP-1-1 --mode 3840x2160 --pos 7680x0 --rotate normal --output HDMI-0 --off --output DP-5 --off --output DP-4 --mode 3840x2160 --pos 0x0 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --primary --mode 3840x2160 --pos 3840x0 --rotate normal
 
 exec --no-startup-id /usr/bin/dropbox start
+exec --no-startup-id /usr/bin/albert
 # exec --no-startup-id ~/src/dotfiles/scripts/linux/remap_keys.sh
 exec --no-startup-id ~/src/dotfiles/scripts/linux/load_xrdb.sh
 
