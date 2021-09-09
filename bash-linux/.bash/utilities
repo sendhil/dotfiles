@@ -125,3 +125,7 @@ function timer() {
       countdown "$n" && i3-nagbar -m "$n timer is over" -t warning
     fi
 }
+
+function batdiff() {
+    git diff --name-only --diff-filter=d | xargs bat --diff
+}
