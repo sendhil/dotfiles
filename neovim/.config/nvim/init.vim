@@ -26,6 +26,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'vim-ctrlspace/vim-ctrlspace'
+Plug 'sbdchd/neoformat'
 
 Plug 'rakr/vim-one'
 
