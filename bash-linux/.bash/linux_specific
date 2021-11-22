@@ -7,3 +7,6 @@ export GOROOT=/usr/lib/golang
 # Prezto defines this
 unalias pbcopy
 alias pbcopy='xclip -selection clipboard -i'
+
+# Other
+alias reset-albert-db="rm ~/.config/albert/core.db"
